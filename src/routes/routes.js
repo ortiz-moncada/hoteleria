@@ -1,9 +1,11 @@
+import {createRouter, createWebHashHistory } from "vue-router"
+
+
 import Inicio from "../components/Inicio.vue"
 import Actividades from "../components/Actividades.vue"
 import Habitaciones from "../components/Habitaciones.vue"
 import Servicios from "../components/Servicios.vue"
 import Reservas from "../components/Reservas.vue"
-import {createRouter, createWebHashHistory } from "vue-router"
 
 const routes = [
     {path: "/", component: Inicio},
