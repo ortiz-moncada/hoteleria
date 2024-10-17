@@ -1,34 +1,7 @@
 <template>
   <div class="contenedor">
     <div>
-   
-      <div class="Limg"> 
-      <div id="carrusel-contenido">
-            <div id="carrusel-caja">
-                <div class="carrusel-elemento">
-                    <img class="imagenes" src="https://www.sofitelbarucalablanca.com/wp-content/uploads/sites/19/2023/04/T3P_1211-HDR-1170x780.jpg" >
-                </div>
-                <div class="carrusel-elemento">   
-                    <img class="imagenes" src="https://nexdom.racc.es/wp-content/uploads/2020/12/decoracion-habitacion-lujo-5.jpg">
-                </div>
-                <div class="carrusel-elemento">   
-                    <img class="imagenes" src="https://images.homify.com/v1533696547/p/photo/image/2669961/..011-RESIDENCIAL.jpg">                        
-                </div>
-            </div>
-        </div>
-    </div>
 
-
-      <div class="Torna">
-        <img class="Elogo" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="" />
-        <div class="NombreHotel">
-          <h2>La Gran Mansion</h2>
-          <h5>HOTEL</h5>
-        </div>
-        <div class="TextM">
-          <h5>Disfruta de la mejor experiencia con tu familia</h5>
-        </div>
-      </div>
 
 
 <div class="LasH"> <h2>Nuestras Habitaciones</h2></div>

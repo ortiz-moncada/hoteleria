@@ -1,51 +1,19 @@
 <template>
 
 
-  <div>
-    <div>
-  
-      <div class="Limg"> 
-      <div id="carrusel-contenido">
-            <div id="carrusel-caja">
-                <div class="carrusel-elemento">
-                    <img class="imagenes" src="https://www.sofitelbarucalablanca.com/wp-content/uploads/sites/19/2023/04/T3P_1211-HDR-1170x780.jpg" >
-                </div>
-                <div class="carrusel-elemento">   
-                    <img class="imagenes" src="https://nexdom.racc.es/wp-content/uploads/2020/12/decoracion-habitacion-lujo-5.jpg">
-                </div>
-                <div class="carrusel-elemento">   
-                    <img class="imagenes" src="https://images.homify.com/v1533696547/p/photo/image/2669961/..011-RESIDENCIAL.jpg">                        
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="conten">
 
 
 
-</div>
+<br>
 
-  <div class="Torna">
-  <img class="Elogo" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="">
-  <div class="NombreHotel">
-  <h2>La Gran Mansion</h2>
-  <h5>HOTEL</h5>
-  </div>
-  <div class="TextM">
-  <h5>Disfruta de la mejor experiencia con tu familia</h5>
-  </div>
-  </div>
-
-
-<br><br>
-
-<br><hr><br>
 
 <div class="LasH"> <h2>Registro</h2></div>
-<br>
+<br><hr><br>
 
   <div class="Login">
 
-<h3 class="ERO">Registrarse</h3><br><br><br>
+<br><br><br>
 
 <h5 class="LasIn">Nombre</h5><br>
 <input class="NOMBREI" type="text" placeholder="Ingrese nombre completo">
@@ -74,7 +42,13 @@
 <br><hr><br>
 
 
-<div class="NR">
+
+<br><br>
+
+
+<div class="Juan">
+
+  <div class="NR">
 <h2>Nuestras Redes</h2>
 </div>
 
@@ -91,10 +65,6 @@
 </div><br><br><br><br>
 
 
-<hr><br><br>
-
-
-<div class="Juan">
 
   <div class="footer-container">
             <div class="footer-column">
@@ -163,21 +133,39 @@
 
   </template>
   
-  <style>
-
+  <style scoped>
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .Login{
-  background-image:url(https://img.freepik.com/fotos-premium/fondo-geometrico-formas-flecha-vista-superior_964851-128023.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/27/06/30/skyscrapers-3184798_1280.jpg);
   background-size: cover;
   width: 30%;
   margin-left:35% ;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 10px gray;
 
+}
+.NR,.Redes{
+
+color: aliceblue;
+}
+.Juan{
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5495448179271709) 0%);
+color: aliceblue;
+}
+.footer-bottom{
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5495448179271709) 0%);
+color: aliceblue;
+}
+.conten{
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/27/06/30/skyscrapers-3184798_1280.jpg);
+  background-size: 100% 100%;
 }
 
 .Ubicacion{
-margin-left: 32%;
-box-shadow: 0px 0px 10px 10px gray;
+margin-left: 30%;
 width: 39.5%;
 }
 .LasIn{

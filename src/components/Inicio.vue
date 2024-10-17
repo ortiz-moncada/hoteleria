@@ -410,10 +410,10 @@ hr{
 .Torna {
   align-items: center;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(146,126,166,0.6811974789915967) 0%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(146,126,166,0.44030112044817926) 0%);
   position: absolute;
   width: 100%;
-  margin-top: -34.5%;
+  margin-top: -38%;
   height: 500px;
 }
 
@@ -491,7 +491,7 @@ hr{
 .Preguntas {
  border: 3px solid #4b2fab;
  border-radius:0px 0px 10px 10px ;
- background-color: rgb(255, 254, 254);
+ box-shadow: gray 0px 0px 5px 5px;
  margin: 2%;
  text-align: center;
 }
