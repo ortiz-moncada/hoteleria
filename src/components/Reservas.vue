@@ -15,16 +15,44 @@
 
 <br><br><br>
 
-<h5 class="LasIn">Nombre</h5><br>
-<input class="NOMBREI" type="text" placeholder="Ingrese nombre completo">
-<br>
-<h5 class="LasIn">Correo Electronico</h5><br>
-<input class="CORREOI" type="email" placeholder="Ingrese correo eletronico">
-<br>
-<h5 class="LasIn">Numero Telefonico</h5><br>
-<input class="NUMBERI" type="number" placeholder="Ingrese numero telefonico">
+
+<div class="stad1">
+
+  <div>
+    <h5 class="LasIn">Nombre</h5>
+    <input class="NOMBREI" type="text" placeholder="Ingrese nombre completo">
+  </div>
+
+  <div>
+    <h5 class="LasIn">Contraseña</h5>
+    <input class="NOMBREI" type="text" placeholder="Ingrese contraseña">
+  </div>
+ 
+</div>
+
 <br>
 
+<div class="stad2">
+  <div>
+    <h5 class="LasIn">Numero Telefonico</h5>
+    <input class="NUMBERI" type="number" placeholder="Ingrese numero telefonico">
+  </div>
+
+  <div>
+    <h5 class="LasIn">Confirmar Contraseña</h5>
+    <input class="NUMBERI" type="number" placeholder="Ingrese contraseña">
+  </div>
+
+</div>
+<br>
+<div class="stad3">
+  <h5 class="LasIn">Correo Electronico</h5>
+  <input class="CORREOI" type="email" placeholder="Ingrese correo eletronico">
+</div>
+
+
+
+<br><br>
 <button class="BotonV2">Registrar</button>
 <br><br>
 
@@ -138,10 +166,10 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .Login{
-  background-image: url(https://cdn.pixabay.com/photo/2018/02/27/06/30/skyscrapers-3184798_1280.jpg);
-  background-size: cover;
-  width: 30%;
-  margin-left:35% ;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5999649859943977) 0%);
+  width: 50%;
+  margin-left:25% ;
   border-radius: 10px;
   border: 3px solid black;
 }
@@ -174,8 +202,7 @@ color: aliceblue;
 text-align: center;
 }
 
- .NUMBERI,.CORREOI,.NOMBREI{
-  margin: 5%;
+ .NUMBERI,.NOMBREI{
   margin-left: 16%;
   width: 70%;
   height: 40px;
@@ -183,6 +210,20 @@ text-align: center;
   border-radius: 10px;
 
  }
+
+ .CORREOI{
+  margin-left: 7%;
+  width: 87%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+ }
+
+.stad1, .stad2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
  .ERO{
   text-align: center;
   color: aliceblue;

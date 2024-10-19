@@ -20,22 +20,14 @@
 
 
     <div class="Torna">
-      <img class="Elogo" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
-      <div class="NombreHotel">
-        <h2>La Gran Mansion</h2>
-        <h5>HOTEL</h5>
-      </div>
       <div class="TextM">
         <h5>Disfruta de la mejor experiencia con tu familia</h5>
       </div>
     </div>
 
     <br><br>
-
-
-
-<img class="Decoracion1" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" >
-<img class="Decoracion2" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" >
+    <img class="Elogo" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
+    <img class="Elogo2" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
 
 
 
@@ -234,25 +226,6 @@ Hoy en día, La Gran Mansión es un ícono de elegancia y sofisticación, recono
 
 
 
-.Decoracion1,.Decoracion2{
-  position: absolute;
-  box-shadow: gray  0px 0px 10px 10px ;
-  border: none;
-  border-radius: 50%;
-}
-.Decoracion2{
-  position: absolute;
-  margin-left:80% ;
-  margin-top: 18%;
-}
-.Decoracion1{
-  position: absolute;
-  margin-left:12% ;
-  margin-top: 18%;
-}
-
-
-
 h1 {
     text-align: center;
 }
@@ -403,32 +376,35 @@ hr{
 
 .TextM{
   color:white;
-  margin-left: 65%;
+  margin-left: 60%;
   margin-top: 11%
 }
 
 .Torna {
-  align-items: center;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(146,126,166,0.44030112044817926) 0%);
-  position: absolute;
+  background: #382b73;
   width: 100%;
-  margin-top: -34.5%;
-  height: 500px;
+  margin-top:-11.5% ;
+
 }
 
 .Elogo {
-  margin-left: 17%;
-  margin-top: 8%;
+  margin-left: 10%;
+  margin-top: -51%;
+  position: absolute;
+  border: 2px white solid;
+  border-radius: 50%;
 
 }
 
-.NombreHotel {
-  font-weight: bold;
-  margin-left: 30%;
-  margin-top: -10%;
-  color: #f0f0f0;
+.Elogo2 {
+  margin-left: 80%;
+  margin-top: -51%;
+  position: absolute;
+  border: 2px white solid;
+  border-radius: 50%;
+
 }
+
 
 
 .Minfo1, .Minfo, .Minfo2, .Minfo3 {

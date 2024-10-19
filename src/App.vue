@@ -2,7 +2,7 @@
   <div class="Container">
 
 <div class="Elgo"> 
-<h2>LA GRAN MANSION</h2>
+<h2 class="Title">LA GRAN MANSION</h2>
 </div>
 
 <div>
@@ -51,8 +51,13 @@ const goTo = (path) => {
   height: 90px;
   text-align: center;
   font-family: initial;
-
 }
+
+.Title{
+  padding: 1%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .Container{
   background-color:#ecebed;
 }
