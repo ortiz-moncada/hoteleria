@@ -143,7 +143,7 @@
   width: 30%;
   margin-left:35% ;
   border-radius: 10px;
-
+  border: 3px solid black;
 }
 .NR,.Redes{
 
@@ -162,6 +162,7 @@ color: aliceblue;
 .conten{
   background-image: url(https://cdn.pixabay.com/photo/2018/02/27/06/30/skyscrapers-3184798_1280.jpg);
   background-size: 100% 100%;
+
 }
 
 .Ubicacion{

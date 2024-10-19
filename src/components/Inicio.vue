@@ -413,7 +413,7 @@ hr{
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(146,126,166,0.44030112044817926) 0%);
   position: absolute;
   width: 100%;
-  margin-top: -38%;
+  margin-top: -34.5%;
   height: 500px;
 }
 
