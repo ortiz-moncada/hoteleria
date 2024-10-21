@@ -213,7 +213,7 @@ Hoy en día, La Gran Mansión es un ícono de elegancia y sofisticación, recono
       </div>
     </div>
 
-    <a v-if="showScrollLink" href=".//Inicio.vue" class="Arriva">
+    <a v-if="showScrollLink" href="/" class="Arriva">
       <img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="Ir arriba">
     </a>
 
