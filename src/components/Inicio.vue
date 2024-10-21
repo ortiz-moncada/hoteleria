@@ -25,9 +25,14 @@
       </div>
     </div>
 
+    
+
+
     <br><br>
     <img class="Elogo" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
     <img class="Elogo2" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
+
+
 
 
 
@@ -208,12 +213,30 @@ Hoy en día, La Gran Mansión es un ícono de elegancia y sofisticación, recono
       </div>
     </div>
 
+    <a v-if="showScrollLink" href="template" class="Arriva">
+      <img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="Ir arriba">
+    </a>
+
   </div>
 </template>
 
 <script setup>
 
+import { ref, onMounted, onUnmounted } from 'vue'
 
+const showScrollLink = ref(false)
+
+const handleScroll = () => {
+  showScrollLink.value = window.scrollY > 1000
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 
 </script>
 
@@ -352,11 +375,21 @@ h1 {
     }
 }
 
+.Arriva {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+}
 
+.Arriva img {
+  width: 100%;
+}
 
-
-
-
+.Arriva:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 
 
 

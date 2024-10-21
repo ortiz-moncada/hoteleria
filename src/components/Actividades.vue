@@ -25,7 +25,7 @@
       <br>
       <h6 class="Solo">{{ Actividad.descripcion }}</h6>
       <br>
-      <button class="BTN">Mas información</button>
+      <button class="BTN" @click="LLamar(Actividad.url)">Más información</button>
       <br>
     </div>
 
@@ -126,44 +126,56 @@ let ActividadesExtremas = [
   {
     nombre: "Paracaidismo",
     descripcion: "Consiste en saltar desde un avión en movimiento a gran altitud y descender utilizando un paracaídas.",
-    imagen: "https://deportesriesgo.com/wp-content/uploads/paracaidismo-deporte-1280x720.jpg"
+    imagen: "https://deportesriesgo.com/wp-content/uploads/paracaidismo-deporte-1280x720.jpg",
+    url: "https://xielo.co/"
   },
   {
     nombre: "Buceo en cuevas",
     descripcion: "Explorar cuevas submarinas, con los desafíos adicionales de la oscuridad y la navegación en entornos estrechos.",
-    imagen: "https://jg-scubadiving.com/wp-content/uploads/2023/08/Formation-IANTD-Cave-diver-1024x576.jpg"
+    imagen: "https://jg-scubadiving.com/wp-content/uploads/2023/08/Formation-IANTD-Cave-diver-1024x576.jpg",
+    url: "https://home.diveasapp.com/tecnicas-de-buceo/guia-de-buceo-en-cuevas/"
   },
   {
     nombre: "Alpinismo",
     descripcion: "Escalar montañas de gran altitud, enfrentándose a condiciones climáticas extremas y terreno accidentado.",
-    imagen: "https://fempa.net/wp-content/uploads/2024/01/7-CONCENTRACION-EQUIPO-ALPINISMO-FEMPA-7-1024x576.jpeg"
+    imagen: "https://fempa.net/wp-content/uploads/2024/01/7-CONCENTRACION-EQUIPO-ALPINISMO-FEMPA-7-1024x576.jpeg",
+    url: "https://fedme.es/alpinismo/" 
   },
   {
     nombre: "Rafting en aguas bravas",
     descripcion: "Descenso por ríos con rápidos de gran intensidad, desafiando las corrientes y obstáculos naturales.",
+      url: "https://www.norwaysbest.com/es/cosas-que-hacer/aventuras/rafting-de-aguas-bravas-en-voss/#mainContainerHeading",
     imagen: "https://26537800.fs1.hubspotusercontent-eu1.net/hub/26537800/hubfs/WEBSITE%20RESIZE%20IMAGES/Day%20Tours/2023-WHITEWATER%20RAFTING-03.webp?height=640&name=2023-WHITEWATER%20RAFTING-03.webp"
   },
   {
     nombre: "Salto BASE",
+      url: "https://www.redbull.com/co-es/tags/base-jumping",
     descripcion: "Saltar desde estructuras fijas como edificios, puentes o acantilados, utilizando un paracaídas.",
     imagen: "https://static.wixstatic.com/media/179b3c_66aa9644ad73432a9426e4abbf1d7b4e~mv2.jpg/v1/fill/w_640,h_418,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/179b3c_66aa9644ad73432a9426e4abbf1d7b4e~mv2.jpg"
   },
   {
     nombre: "Escalada en roca",
+     url: "https://www.niddo.co/product-page/escalada-en-roca",
     descripcion: "Escalar paredes naturales de roca utilizando solo cuerdas y equipo especializado.",
     imagen: "https://s1.abcstatics.com/media/bienestar/2021/08/15/escalada-ks3E--1248x698@abc.jpg"
   },
   {
     nombre: "Surf en olas gigantes",
+     url: "https://www.visittheusa.co/experience/lugares-increibles-para-surfear-en-estados-unidos?&fy25_co_ouen_gen_getr_sem_pd_water&gad_source=1",
     descripcion: "Montar olas de gran tamaño en condiciones extremas, enfrentándose a corrientes fuertes y riesgos naturales.",
     imagen: "https://img.redbull.com/images/q_auto,f_auto/redbullcom/2019/03/07/adfd3e94-9352-4337-ae32-5fd7ec70ca02/italo-ferreira-surf-pipeline"
   },
   {
     nombre: "Wingsuit",
+     url: "https://paracaidismo.org.ar/Skydiving/Wingsuit.html",
     descripcion: "Volar a gran velocidad usando un traje con alas desde grandes alturas, desafiando la gravedad y el viento.",
     imagen: "https://res.cloudinary.com/manawa/image/upload/v1639134412/articles/2708/63d792ce46aa1e511a534cfd5d0add11.jpg"
   }
 ];
+
+function LLamar(url) {
+  window.open(url, '_blank'); 
+}
 
 
 

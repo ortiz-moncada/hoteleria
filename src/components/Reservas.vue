@@ -1,4 +1,4 @@
-<template>
+  <template>
 
 
   <div class="conten">
@@ -20,12 +20,12 @@
 
   <div>
     <h5 class="LasIn">Nombre</h5>
-    <input class="NOMBREI" type="text" placeholder="Ingrese nombre completo">
+    <input v-model="nombre" class="NOMBREI" type="text" placeholder="Ingrese nombre completo">
   </div>
 
   <div>
     <h5 class="LasIn">Contraseña</h5>
-    <input class="NOMBREI" type="text" placeholder="Ingrese contraseña">
+    <input v-model="contraseña" class="NOMBREI" type="text" placeholder="Ingrese contraseña">
   </div>
  
 </div>
@@ -35,25 +35,26 @@
 <div class="stad2">
   <div>
     <h5 class="LasIn">Numero Telefonico</h5>
-    <input class="NUMBERI" type="number" placeholder="Ingrese numero telefonico">
+    <input v-model="telefono" class="NUMBERI" type="number" placeholder="Ingrese numero telefonico">
   </div>
 
   <div>
     <h5 class="LasIn">Confirmar Contraseña</h5>
-    <input class="NUMBERI" type="number" placeholder="Ingrese contraseña">
+    <input v-model="confirmarContraseña" class="NUMBERI" type="password" placeholder="Ingrese contraseña">
   </div>
 
 </div>
 <br>
 <div class="stad3">
   <h5 class="LasIn">Correo Electronico</h5>
-  <input class="CORREOI" type="email" placeholder="Ingrese correo eletronico">
+  <input v-model="CorreoE" class="CORREOI" type="email" placeholder="Ingrese correo eletronico">
 </div>
 
 
 
 <br><br>
-<button class="BotonV2">Registrar</button>
+<button class="BotonV2" @click="ValidarRegistro">Registrar</button>
+
 <br><br>
 
 </div>
@@ -161,9 +162,75 @@
 
   </template>
   
+  <script setup>
+import { ref } from 'vue';
+import Swal from 'sweetalert2';
+
+const nombre = ref('');
+const contraseña = ref('');
+const confirmarContraseña = ref('');
+const telefono = ref('');
+const CorreoE = ref('');
+
+
+function ValidarRegistro() {
+
+  if (nombre.value.trim() === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Por favor, ingrese su nombre completo.',
+    });
+  }  else if (contraseña.value.trim() === ' ') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Por favor, ingrese una contraseña.',
+    });
+  } else if (confirmarContraseña.value.trim() === ' ') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Por favor, confirme su contraseña.',
+    });
+  } else if (contraseña.value !== confirmarContraseña.value) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Las contraseñas no coinciden.',
+    });
+  } else if (telefono.value.trim() === ' ') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Por favor ingrese un número de teléfono válido.',
+    });
+  } else if (CorreoE.value.trim() === ' ') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Por favor, ingrese un correo electrónico válido.',
+    });
+  } else{
+    Swal.fire({
+      icon: 'success',
+      title: 'Registro exitoso!',
+      text: 'Gracias por registrarte.',
+    });
+  }
+}
+
+
+</script>
+
   <style scoped>
 *{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
 }
 .Login{
   background: rgb(255,255,255);
@@ -234,7 +301,8 @@ text-align: center;
   color: white;
 
   padding: 10px;
-  margin-left: 40%;
+  width: 90%;
+  margin-left: 6%;
   cursor: pointer;
   border-radius: 5px;
 }

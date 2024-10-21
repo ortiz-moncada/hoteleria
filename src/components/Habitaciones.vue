@@ -21,7 +21,7 @@
           <div class="precio">
             <strong>{{ habitacion.precio.toLocaleString() }} COP</strong>
           </div>
-          <button class="BotonV">Hacer reserva</button>
+          <button class="BotonV" @click="reservar">Hacer reserva</button>
         </div>
 
 
@@ -118,11 +118,16 @@
 
 </div>
 
+
+
   </div>
   
 </template>
 
 <script setup>
+import Swal from 'sweetalert2';
+
+
 let habitaciones = [
   {
     imagen: "https://images.homify.com/v1533696547/p/photo/image/2669961/..011-RESIDENCIAL.jpg",
@@ -185,6 +190,16 @@ let habitaciones = [
     precio: 550000,
   },
 ];
+
+function reservar(){
+    Swal.fire({
+      icon:'success',
+      title:'Reservada',
+      text: 'Su habitacion ha sido reservada',
+    });
+}
+
+
 </script>
 
 <style>
