@@ -2,8 +2,13 @@
   <div class="Container">
 
 <div class="Elgo"> 
-<h2 class="Title">LA GRAN MANSION</h2>
+  <div><img class="Elogo1" src="https://cdn-icons-png.flaticon.com/128/5321/5321238.png" alt="Logo Hotel"></div>
+  <div><h2 class="Title">LA GRAN MANSION</h2></div>
+  <div><img class="Elogo2" src="https://cdn-icons-png.flaticon.com/128/5321/5321238.png" alt="Logo Hotel"></div>
+
 </div>
+
+
 
 <div>
   <q-tabs 
@@ -45,13 +50,40 @@ const goTo = (path) => {
 
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 .Elgo{
-  background-color: #382b73;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: black;
   color: #fff;
   height: 90px;
   text-align: center;
   font-family: initial;
 }
+
+.Elogo1 {
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 30%;
+  margin: 2.5%;
+}
+
+.Elogo2 {
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 30%;
+  margin: 2.5%;
+
+}
+
+#BarraP{
+  background-color: black;
+  color: #f0f0f0;
+}
+
 
 .Title{
   padding: 1%;

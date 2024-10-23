@@ -29,8 +29,7 @@
 
 
     <br><br>
-    <img class="Elogo" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
-    <img class="Elogo2" src="https://cdn-icons-png.flaticon.com/128/17299/17299405.png" alt="Logo Hotel">
+
 
 
 
@@ -227,7 +226,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const showScrollLink = ref(false)
 
 const handleScroll = () => {
-  showScrollLink.value = window.scrollY > 1000
+  showScrollLink.value = window.scrollY > 1500
 }
 
 onMounted(() => {
@@ -402,10 +401,7 @@ hr{
   margin-left: 8%;
 }
 
-.bg-orange-text-white-shadow-2{
-  background-color: #382b73;
-  color: #f0f0f0;
-}
+
 
 .TextM{
   color:white;
@@ -414,29 +410,12 @@ hr{
 }
 
 .Torna {
-  background: #382b73;
+  background: black;
   width: 100%;
   margin-top:-11.5% ;
 
 }
 
-.Elogo {
-  margin-left: 10%;
-  margin-top: -51%;
-  position: absolute;
-  border: 2px white solid;
-  border-radius: 50%;
-
-}
-
-.Elogo2 {
-  margin-left: 80%;
-  margin-top: -51%;
-  position: absolute;
-  border: 2px white solid;
-  border-radius: 50%;
-
-}
 
 
 
@@ -474,8 +453,8 @@ hr{
   text-align: center;
   margin-left: 50%;
   width: 100%;
-  background: rgb(146,126,166);
-  background: linear-gradient(315deg, rgba(146,126,166,1) 0%, rgba(56,17,98,1) 35%, rgba(146,126,166,1) 100%);
+  background: rgb(0,0,0);
+background: linear-gradient(315deg, rgba(0,0,0,1) 3%, rgba(91,88,93,1) 48%, rgba(0,0,0,1) 96%);
   color: white;
   border-radius: 10px;
 }
@@ -498,7 +477,7 @@ hr{
 }
 
 .Preguntas {
- border: 3px solid #4b2fab;
+ border: 3px solid black;
  border-radius:0px 0px 10px 10px ;
  box-shadow: gray 0px 0px 5px 5px;
  margin: 2%;

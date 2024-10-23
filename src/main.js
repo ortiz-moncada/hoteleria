@@ -3,6 +3,7 @@ import './style.css'
 import App from './App.vue';
 
 
+
 import { Quasar } from 'quasar';
 import { router } from './routes/routes.js';
 
